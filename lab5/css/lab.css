@@ -7,3 +7,15 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+.img-container{
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
