@@ -8,10 +8,10 @@
     background-color: #DDD8C4;
   }
 
-  .img-container{
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
+  .label{
+    color: purple;
+    font-size: xx-large;
+    font-weight: bold;
   }
   
   .center {
