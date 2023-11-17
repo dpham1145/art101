@@ -1,7 +1,7 @@
 
 
 $("#my-button").click(function(){
-    var name = prompt("Name please: ")
-    $("#title").html("Hello " + name);
+var name = $("#input").val()
+console.log("Prompt return" + name);
+$("#title").html("Hello " + name);
 })
-
