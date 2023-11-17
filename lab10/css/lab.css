@@ -1,12 +1,34 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  background-color: #17b2e1;
+}
+
+/* we can have rules apply to multiple elements at the same time with commas */
+h1,h2,h3 {
+  font-family: Verdana;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+h1 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+}
+
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #888;
+  background-color: #4093db;
+}
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
 
   .img-container{
     float: right;
@@ -20,3 +42,46 @@
     margin-right: auto;
   }
   
+  .special {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: darkgray;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* CSS for Lab 10 - Texting Style */
+#conversation-container {
+  background-color: white; /* Add this line to set the background to white */
+  padding: 10px; /* Adjust the padding as needed */
+}
+/* Add a common class for the speech bubble style */
+.text-bubble {
+  padding: 10px;
+  border-radius: 15px;
+  margin: 5px;
+  overflow: auto;
+  display: inline-block;
+  word-wrap: break-word; /* Added to allow long words to break and wrap */
+}
+
+.text-bubble p {
+  margin: 0;
+}
+
+/* Define colors for alternating speech bubbles */
+.text-bubble.left {
+  background-color: #b8b8b8; /* Grey background */
+  text-align: left;
+  max-width: 70%;
+}
+
+.text-bubble.right {
+  background-color: #5cf75c; /* Green background */
+  text-align: right;
+  max-width: 70%;
+  float: right; /* Add this line to float the green bubbles to the right */
+}
