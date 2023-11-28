@@ -4,7 +4,7 @@
 	<title>Slug</title>
         <script src="../js/proj.js" defer></script>			<meta charset="UTF-8" />
 			  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<link rel="stylesheet" type="text/css" href="css/proj.css">
+			<link rel="stylesheet" type="text/css" href="../css/proj.css">
 			<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -26,33 +26,41 @@
         <button class="randomButtonAnimal" id="randomButton">Randomize</button>
              
 
+         <!-- Popup -->
+         <button id="openBtn1">Open Popup</button>
 
-        <button id="openModel">Open</button>
-        <div class="model" id="model">
-             <div class="model-inner">
-              <h2>Cool</h2>
-              <button id="closeModel">Close</button>
+         <div id="popup1" class="popup">
+             <div class="popup-content"> 
+                 <span class="close" onclick="closePopup1()">&times;</span>
+                 <p>This is some information in the pop-up.</p>
              </div>
-          </div>
-
-        <!-- Info Buttons -->
-        <button class="infoButton" data-target="dietpop">Diet</button>
-        <section class="pop-up dietpop">
-            <h1>Carnivore</h1>
-            <p>blah blah blah</p>
-        </section>
-
-        <button class="infoButton" data-target="habitatpop">Habitat</button>
-        <section class="pop-up habitatpop">
-            <h1>Location</h1>
-            <p>blah blah blah</p>
-        </section>
-
-        <button class="infoButton" data-target="biopop">Bio</button>
-        <section class="pop-up biopop">
-            <h1>Bio</h1>
-            <p>blah blah blah</p>
-        </section>
+         </div>
+     
+         <script src="../js/proj.js"></script>
+     
+              <!-- Popup -->
+              <button id="openBtn2">Open Popup</button>
+     
+              <div id="popup2" class="popup">
+                  <div class="popup-content">
+                      <span class="close" onclick="closePopup2()">&times;</span>
+                      <p>This is some information in the pop-up.</p>
+                  </div>
+              </div>
+          
+              <script src="../js/proj.js"></script>
+     
+              <!-- Popup -->
+              <button id="openBtn3">Open Popup</button>
+     
+              <div id="popup3" class="popup">
+                  <div class="popup-content">
+                      <span class="close" onclick="closePopup3()">&times;</span>
+                      <p>This is some information in the pop-up.</p>
+                  </div>
+              </div>
+          
+              <script src="../js/proj.js"></script>
 
         <!-- Back to List -->
         <nav id="links">

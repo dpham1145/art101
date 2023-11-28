@@ -80,10 +80,47 @@ $(document).ready(function () {
     });
 });
 
-// Just trying out Pop up
-const openBtn = document.getElementById("openModel");
-const closeBtn = document.getElementById("closeModel");
-const model = document.getElementById("model");
+// Just trying out POP UP 1
+function openPopup1() {
+    document.getElementById('popup1').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup1() {
+    document.getElementById('popup1').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn1').addEventListener('click', openPopup1);
+
+//POPUP 2
+function openPopup2() {
+    document.getElementById('popup2').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup2() {
+    document.getElementById('popup2').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn2').addEventListener('click', openPopup2);
+
+
+//POPUP 3
+function openPopup3() {
+    document.getElementById('popup3').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup3() {
+    document.getElementById('popup3').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn3').addEventListener('click', openPopup3);
+
+
 
 openBtn.addEventListener("click", () => {
     model.classList.add("open");
