@@ -19,22 +19,10 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-  #output .text span.gryffindor { color: red; }
-  #output .text span.ravenclaw { color: blue; }
-  #output .text span.slytherin { color: green; }
-  #output .text span.hufflepuff { color: yellow; }
-  
-  
 
-  
-  #houseImage {
-      position: absolute;
-      top: 180px;
-      right: 10px;
-      width: 300px; /* Adjust the width as needed */
-      height: 300px; /* Adjust the height as needed */
-  }
-  
-  
+
+
+
+
+
 
