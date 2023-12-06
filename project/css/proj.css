@@ -1,3 +1,11 @@
+.upperbar{
+    background-color: green;
+}
+
+.bottombar{
+    background-color: green;
+}
+
 .popup {
     display: none;
     position: fixed;
@@ -18,43 +26,39 @@
     font-size: 20px;
     cursor: pointer;
 }
-/*button{
-    background-color: blueviolet;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
 
-}
-.model-container {
-    background-color: white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: fixed;
-    opacity: 0;
-    pointer-events: none;
-    top: 0;
-    left:0;
-    height: 100px;
-    width: 100px;
-
-}
+.img-container{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
-.model {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom:0;
-
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh; /* Ensure a minimum height to fill the viewport */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    background-color: aqua;
+  }
 
+.button-container {
+    margin-top: auto; /* Push the container to the bottom of the page */
+    display: flex;
+    justify-content: space-around; /* Spread buttons evenly */
+    padding: 10px; /* Optional: Add padding for spacing */
 }
-.model.open {
-    opacity: 1;
-    z-index: 999;
+
+button {
+  /* Additional styling for your buttons if needed */
+  padding: 10px 20px;
+  font-size: 16px;
 }
-*/

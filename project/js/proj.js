@@ -129,3 +129,11 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     model.classList.remove("open");
 });
+
+// Back to List Button
+$(document).ready(function() {
+    $('#redirectButton').on('click', function() {
+        // Redirect to another page in the same directory
+        window.location.href = '../home.html';
+    });
+});
