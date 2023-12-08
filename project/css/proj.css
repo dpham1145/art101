@@ -40,7 +40,10 @@
     margin-right: auto;
 
   }
-
+  
+  .tab-content {
+    display: none;
+}
 
 body {
     margin: 0;

@@ -1,84 +1,60 @@
-// Function to generate a random page URL
-function getRandomPage() {
-    // Array of URLs
-    var pages = [
-        '../project/animals/coyote.html',
-        '../project/animals/crow.html',
-        '../project/animals/deer.html',
-        '../project/animals/koi.html',
-        '../project/animals/lizard.html',
-        '../project/animals/mountainlion.html',
-        '../project/animals/raccoon.html',
-        '../project/animals/slug.html',
-        '../project/animals/squirrel.html',
-        '../project/animals/turkey.html',
-        // Add more URLs as needed
+
+// Function to open a random popup
+function openRandomPopup() {
+    // Array of popup IDs
+    var popups = [
+        'popup1', 'popup2', 'popup3', 'popup4', 'popup5',
+        'popup6', 'popup7', 'popup8', 'popup9', 'popup10'
     ];
 
-    // Get a random index within the range of the pages array
-    var randomIndex = Math.floor(Math.random() * pages.length);
+    // Get a random index within the range of the popups array
+    var randomIndex = Math.floor(Math.random() * popups.length);
 
-    // Return a random page URL
-    return pages[randomIndex];
+    // Get the ID of the random popup
+    var randomPopupId = popups[randomIndex];
+
+    // Open the random popup
+    document.getElementById(randomPopupId).style.display = 'block';
 }
 
-
-
-// Function to redirect to a random page
-function redirectToRandomPage() {
-    var randomPage = getRandomPage();
-    window.location.href = randomPage;
-}
-
-
-function getRandomPageAnimal() {
-    // Array of URLs
-    var pages = [
-      '../animals/coyote.html',
-      '../animals/crow.html',
-      '../animals/deer.html',
-      '../animals/koi.html',
-      '../animals/lizard.html',
-      '../animals/mountainlion.html',
-      '../animals/raccoon.html',
-      '../animals/slug.html',
-      '../animals/squirrel.html',
-      '../animals/turkey.html',
-      // Add more URLs as needed
-    ];
-    
-
-    // Get a random index within the range of the pages array
-    var randomIndex = Math.floor(Math.random() * pages.length);
-
-    // Return a random page URL
-    return pages[randomIndex];
-  }
-
-  // Function to redirect to a random page or a specific animal page
-function redirectToRandomPageAnimal(animal) {
-    if (animal) {
-        // If an animal name is provided, go to the specific animal page
-        window.location.href = `animals/${animal}.html`; // No need for '../' here
-    } else {
-        // If no animal name is provided, generate a random page URL
-        var randomPage = getRandomPageAnimal();
-        window.location.href = randomPage;
+// Function to close all popups
+function closeAllPopups() {
+    for (var i = 1; i <= 10; i++) {
+        var popupId = 'popup' + i;
+        document.getElementById(popupId).style.display = 'none';
     }
 }
 
-
 $(document).ready(function () {
+    // Attach an event listener to the randomButtonHome
     $(".randomButtonHome").click(function () {
-        redirectToRandomPage();
+        // Close all popups
+        closeAllPopups();
+        // Open a random popup
+        openRandomPopup();
         console.log("Home Test");
     });
-
-    $(".randomButtonAnimal").click(function () {
-        redirectToRandomPageAnimal();
-        console.log("Animal Test");
-    });
 });
+
+// Function to show a specific tab and hide others
+    // Variable to store the currently open tab
+    var currentTab = null;
+
+    // JavaScript function to toggle tab content visibility
+    function openTab(tabName) {
+        var tabContent = document.getElementById(tabName);
+
+        // Close the current tab if it's different from the clicked tab
+        if (currentTab && currentTab !== tabContent) {
+            currentTab.style.display = 'none';
+        }
+
+        // Toggle the visibility of the clicked tab
+        tabContent.style.display = (tabContent.style.display === 'block') ? 'none' : 'block';
+
+        // Update the currentTab variable
+        currentTab = tabContent;
+    }
 
 // Just trying out POP UP 1
 function openPopup1() {

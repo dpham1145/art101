@@ -37,7 +37,10 @@
                   <span class="close" onclick="closePopup1()">&times;</span>
 
                   <p style="text-align:center">Bio</p>
-            <img class="center" src="../project/img/coyote.jpg"
+     
+
+
+                </div>       <img class="center" src="../project/img/coyote.jpg"
 
             width = "300";>
 
@@ -47,9 +50,29 @@
                     4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
                     
                     </p>
+
+                    <!-- Tab Content -->
+                    <div class="tab" id="tab1">
+                      <button class="tab-btn" onclick="openTab('diet')">Diet</button>
+                      <button class="tab-btn" onclick="openTab('habitat')">Habitat</button>
+                      <button class="tab-btn" onclick="openTab('bio')">Bio</button>
+                      
+                    <div id="diet" class="tab-content">
+                      <!-- Diet Content Goes Here -->
+                      <p>Diet information...</p>
+                  </div>
+                  <div id="habitat" class="tab-content">
+                      <!-- Habitat Content Goes Here -->
+                      <p>Habitat information...</p>
+                  </div>
+                  <div id="bio" class="tab-content">
+                      <!-- Bio Content Goes Here -->
+                      <p>Bio information...</p>
+                  </div>
+
               </div>
             </div>
-        
+            
           <!-- Crow -->
           <button id="openBtn2">Crow</button>
 
