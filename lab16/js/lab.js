@@ -6,8 +6,6 @@ Author: Damon Pham
 Date: 12/5/2023
 */
 
-// Define the XKCD API endpoint
-
 $.ajax({
   // Use another CORS proxy to bypass CORS restrictions
   url: "https://api.allorigins.win/get?url=https://xkcd.com/info.0.json",
