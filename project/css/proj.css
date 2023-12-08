@@ -1,9 +1,10 @@
 .upperbar{
-    background-color: green;
+    background-color: rgb(175, 215, 222);
 }
 
 .bottombar{
-    background-color: green;
+    height: 33.33%;
+    background-color: rgb(175, 215, 222);
 }
 
 .popup {
@@ -37,6 +38,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
   }
 
 
@@ -47,7 +49,7 @@ body {
     min-height: 100vh; /* Ensure a minimum height to fill the viewport */
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: rgb(81, 159, 92);
   }
 
 .button-container {
@@ -57,8 +59,28 @@ body {
     padding: 10px; /* Optional: Add padding for spacing */
 }
 
+.button-container-home   {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 10px; /* Adjust as needed for spacing between buttons */
+}
+
+#homeButton {
+  width: 100%; /* Make buttons fill the width of their container */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the button's total width */
+}
+
 button {
-  /* Additional styling for your buttons if needed */
-  padding: 10px 20px;
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #8B4513;
+  color: #fff; 
+  text-align: center;
+  text-decoration: none;
   font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  border: 2px solid #CD853F; 
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #888888; 
 }

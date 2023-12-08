@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project</title>
+	<title>Crow</title>
     <script src="js/proj.js" defer></script>			<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../css/proj.css">
@@ -11,21 +11,33 @@
     <body>
         
         <main>
-            <h1>Crow</h1>
+            <div class = "upperbar">
+                <a href="../about.html">
+                    <button>About Us</button>
+                </a>
+                <h1><center>Crow</center></h1>
+                <a href="coyote.html".html">
+                    <button>Previous</button>
+                </a>
+                <a href="deer.html">
+                    <button>Next</button>
+                </a>
+                
+            </div>
 
+        <!-- Image -->
+            <img class="center" src="../img/crowmain.jpg"
 
+            width = "700";>
       
-
-        
-
-
         <!-- Randomize Button -->
-        <button class="randomButtonAnimal" id="randomButton">Randomize</button>
+    <div class = "bottombar" >
+    <div class="button-container">
 
         <!--opens a random page-->
 
          <!-- Popup -->
-         <button id="openBtn1">Open Popup</button>
+         <button id="openBtn1">Diet</button>
 
          <div id="popup1" class="popup">
              <div class="popup-content"> 
@@ -53,33 +65,48 @@
          <script src="../js/proj.js"></script>
      
               <!-- Popup -->
-              <button id="openBtn2">Open Popup</button>
+              <button id="openBtn2">Habitat</button>
      
               <div id="popup2" class="popup">
                   <div class="popup-content">
                       <span class="close" onclick="closePopup2()">&times;</span>
+
+                      <p style="text-align:center">Habitat</p>
+                 <img class="center" src="../img/crowhabitat.jpg"
+     
+                 width = "300";>
+
+                 <img class="center" src="../img/crow habitat2.jpg"
+     
+                 width = "300";>
+
                       <p>Crows are highly adaptable birds and can be found in a variety of habitats, including urban, suburban, and rural areas. In Northern California, crows can be commonly observed in the following habitats:<br>
                         1. Urban and Suburban Areas: Crows are highly adaptable to human-modified environments. They thrive in cities and suburbs, taking advantage of the abundant food resources, including human waste and discarded food.<br>
                         2. Wooded Areas: Crows are often found in wooded areas, including forests and wooded parks. These environments provide roosting sites and natural food sources.<br>
                         3. Open Fields and Grasslands: Crows may inhabit open fields and grasslands, where they can find a variety of food sources, including insects, small vertebrates, and seeds.<br>
                         4. Coastal Areas: In coastal regions of Northern California, crows may be found near shorelines, taking advantage of marine life and human activities along the coast.<br>
                         5. Agricultural Lands: Crows can be observed in agricultural areas, where they may feed on crops and agricultural produce. However, their presence in these areas can sometimes lead to conflicts with farmers.<br>
-                        6. Riparian Zones: Crows are often associated with riparian zones (areas along rivers and streams) where they can find water, roosting sites, and a variety of food sources.<br>
-                        7. Landfills and Dump Sites: Crows are scavengers, and in some cases, they frequent landfills and dump sites to feed on discarded food and waste.<br>
-                        8. Parks and Gardens: Crows may inhabit parks, gardens, and other green spaces within urban and suburban environments, where they can find both natural and human-provided food sources.<br>
                         Crows are opportunistic and adaptable birds, which allows them to thrive in diverse habitats. Their adaptability to urban environments has contributed to their success in coexisting with human populations across various landscapes in Northern California.
                         </p>
                   </div>
               </div>
           
               <script src="../js/proj.js"></script>
+
+              <button class="randomButtonAnimal" id="randomButton">Randomize</button>
      
               <!-- Popup -->
-              <button id="openBtn3">Open Popup</button>
+              <button id="openBtn3">Bio</button>
      
               <div id="popup3" class="popup">
                   <div class="popup-content">
                       <span class="close" onclick="closePopup3()">&times;</span>
+
+                      <p style="text-align:center">Bio</p>
+                 <img class="center" src="../img/crowbio.jpg"
+     
+                 width = "300";>
+
                       <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
                          2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
                         3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
@@ -92,14 +119,15 @@
               <script src="../js/proj.js"></script>
  
          <!-- Back to List -->
-         <nav id="links">
-             <a href="../home.html">Back to list</a>
-         </nav>
+         <a href="../home.html">
+            <button>Go Back to List</button>
+        </a>
+    </div>
 
             </div>
 
 
         </main>
-
+    </div>
     </body> 
 </html>
