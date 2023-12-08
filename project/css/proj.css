@@ -65,7 +65,7 @@ body {
     gap: 10px; /* Adjust as needed for spacing between buttons */
 }
 
-#homeButton {
+.homeButton {
   width: 100%; /* Make buttons fill the width of their container */
   padding: 10px;
   box-sizing: border-box; /* Include padding in the button's total width */

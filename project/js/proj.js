@@ -120,6 +120,97 @@ function closePopup3() {
 // Event listener for the open button
 document.getElementById('openBtn3').addEventListener('click', openPopup3);
 
+//POPUP 4
+function openPopup4() {
+    document.getElementById('popup4').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup4() {
+    document.getElementById('popup4').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn4').addEventListener('click', openPopup4);
+
+//POPUP 5
+function openPopup5() {
+    document.getElementById('popup5').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup5() {
+    document.getElementById('popup5').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn5').addEventListener('click', openPopup5);
+
+//POPUP 6
+function openPopup6() {
+    document.getElementById('popup6').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup6() {
+    document.getElementById('popup6').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn6').addEventListener('click', openPopup6);
+
+//POPUP 7
+function openPopup7() {
+    document.getElementById('popup7').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup7() {
+    document.getElementById('popup7').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn7').addEventListener('click', openPopup7);
+
+//POPUP 8
+function openPopup8() {
+    document.getElementById('popup8').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup8() {
+    document.getElementById('popup8').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn8').addEventListener('click', openPopup8);
+
+//POPUP 9
+function openPopup9() {
+    document.getElementById('popup9').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup9() {
+    document.getElementById('popup9').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn9').addEventListener('click', openPopup9);
+
+//POPUP 10
+function openPopup10() {
+    document.getElementById('popup10').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup10() {
+    document.getElementById('popup10').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn10').addEventListener('click', openPopup10);
+
 
 
 openBtn.addEventListener("click", () => {
