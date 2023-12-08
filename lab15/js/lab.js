@@ -6,24 +6,26 @@ Author: Damon Pham
 Date: 12/3/2023
 */
 
-const ENDPOINT = "https://yesno.wtf/api/";
+const ENDPOINT = "https://xkcd.com/info.0.json";
 
-//attach an event listener
-$("#activate").click(function(){
-  //ajax this
+// Attach an event listener
+$("#get-em").click(function () {
+  // Make an AJAX request
   $.ajax({
-    "url": ENDPOINT,
-    "dataType": "json",
-    "success": function(results){
-      console.log(results);
-      //in the callback:
-      //extract the results
-      jokeText = results.answer;
-      //add to output div
-      $("#output").append("<p>" + jokeText);
-    },
-    "error": function(){
-
+    url: ENDPOINT,
+    dataType: "json",
+    success: handleComic,
+    error: function (xhr, status, error) {
+      console.error("Failed to retrieve XKCD comic.", status, error);
     }
-  })
-})
+  });
+});
+
+// Define the callback function to handle the response
+function handleComic(comicObj) {
+  console.log(comicObj);
+  // Extract the comicObj
+  const numText = comicObj.num;
+  // Add to the output div
+  $("#output").append("<p>Comic Number: " + numText + "</p>");
+}

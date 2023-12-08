@@ -6,36 +6,29 @@ Author: Damon Pham
 Date: 12/5/2023
 */
 
-console.log("JS Loaded");
+// Define the XKCD API endpoint
 
-ENDPOINT = "https://api.nasa.gov/planetary/apod";
-const APIKEY="5suoGBf3cGeQm1BUhD9AadF19TqpcMjlmfR9QWRX";
-// add button event listener
-$("#get-em").click(function(){
-    console.log("Click");
-	// construct ajax object
-	const ajaxParams = {
-	  url: ENDPOINT,
-	  data: {api_key: APIKEY},
-	  type: "GET",
-	  dataType: "json",
-    success: ajaxSuccess,
-    error: ajaxError
-	}
-    
-    $.ajax(ajaxParams);
-})
+$.ajax({
+  // Use another CORS proxy to bypass CORS restrictions
+  url: "https://api.allorigins.win/get?url=https://xkcd.com/info.0.json",
+  type: "GET",
+  dataType: "json",
+  success: function(response) {
+      // Parse the JSON from the response body
+      const comicObj = JSON.parse(response.contents);
 
-function ajaxSuccess(data){
-	  console.log("Here's what I got:", data);
-      const title = data.title;
-      const desc = data.explanation;
-      const imageURL = data.url;
-      $("#output").append("<h2>" + title);
-      $("#output").append("<img src= '" + imageURL + "' style='max-width: 100%;'/>");
-      $("#output").append("<p>" + desc + "</p>")
-}
+      // Process and add data to the output div
+      $("#output").append("<h2>" + (comicObj.title || 'Title not available') + "</h2>");
 
-function ajaxError(){
-  console.log("Failed");
-}
+      // Check if img property exists
+      if (comicObj.img) {
+          $("#output").append("<img src='" + comicObj.img + "' alt='" + (comicObj.alt || '') + "' title='" + (comicObj.alt || '') + "'>");
+      } else {
+          $("#output").append("<p>Image not available</p>");
+      }
+  },
+  error: function(jqXHR, textStatus, errorThrown) {
+      // Handle errors
+      console.log("Error:", textStatus, errorThrown);
+  }
+});
