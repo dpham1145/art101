@@ -196,3 +196,23 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     model.classList.remove("open");
 });
+
+// Function to open a specific popup
+function openPopup(popupId) {
+    // Close any open popups
+    closeAllPopups();
+
+    // Open the selected popup
+    document.getElementById(popupId).style.display = "block";
+}
+
+// Function to close all popups
+function closeAllPopups() {
+    // Get all elements with the class name "popup"
+    var popups = document.getElementsByClassName("popup");
+
+    // Iterate through all popups and hide them
+    for (var i = 0; i < popups.length; i++) {
+        popups[i].style.display = "none";
+    }
+}
