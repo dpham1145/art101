@@ -56,7 +56,7 @@ $(document).ready(function () {
         currentTab = tabContent;
     }
 
-// Just trying out POP UP 1
+//POPUP 1
 function openPopup1() {
     document.getElementById('popup1').style.display = 'block';
 }
