@@ -1,10 +1,43 @@
+
+h2{
+  font-family: 'Lucida Sans';
+  color: #884313;
+}
+
+h1{
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bold;
+  font: 300;
+  box-sizing: content-box;
+  padding: 20px;
+  color: rgb(39, 75, 0);
+  background-color: rgb(205, 197, 155);
+  border: 3px solid rgb(77, 46, 46);
+}
+
+#randomButton {
+  position: relative;
+  bottom: 14px;
+  background-color: rgb(35, 66, 25);
+  font-family: 'Stencil Std', fantasy;
+  border: rgb(117, 165, 113)
+}
+
+#title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .upperbar {
-  background-color: rgb(175, 215, 222);
+  background-color: rgb(80, 109, 71);
+  padding: 50px;
+  border: 3px solid rgb(77, 46, 46);
 }
 
 .bottombar {
   height: 33.33%;
-  background-color: rgb(175, 215, 222);
+  background-color: rgb(222, 205, 175);
 }
 
 .popup {
@@ -40,6 +73,11 @@
   margin-right: auto;
 }
 
+.left {
+  float: left;
+  padding: 10px;
+}
+
 .tab-content {
   display: none;
 }
@@ -51,7 +89,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(81, 159, 92);
+  background-color: rgb(117, 165, 113);
 }
 
 .button-container {
@@ -117,72 +155,65 @@ button {
 
 /* Example styling for Coyote image */
 #coyote-image { /* Adjust the top position as needed */
-  bottom: 350px;
-  left: 100px; /* Adjust the left position as needed */
+  bottom: 130px;
+  left: 550px; /* Adjust the left position as needed */
   /* Add other styling properties for the Coyote image */
 }
 
 /* Example styling for Crow image */
 #crow-image { /* Adjust the top position as needed */
-  bottom: 300px;
-  left: 200px; /* Adjust the left position as needed */
+  bottom: 100px;
+  left: 800px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }
 
 /* Example styling for deer image */
 #deer-image { /* Adjust the top position as needed */
-  bottom: 300px;
-  left: 300px; /* Adjust the left position as needed */
+  bottom: -20px;
+  left: 500px; /* Adjust the left position as needed */
   /* Add other styling properties for the deer image */
 }
 
 /* Example styling for Crow image */
 #koi-image { /* Adjust the top position as needed */
-  bottom: 500px;
-  left: 200px; /* Adjust the left position as needed */
+  bottom: -100px;
+  right: 600px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }
 
 /* Example styling for Crow image */
 #lizard-image { /* Adjust the top position as needed */
-  bottom: 500px;
-  left: 300px; /* Adjust the left position as needed */
+  bottom: -150px;
+  right: 400px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }
 
-/* Example styling for Crow image */
-#lizard-image { /* Adjust the top position as needed */
-  bottom: 500px;
-  left: 400px; /* Adjust the left position as needed */
-  /* Add other styling properties for the Crow image */
-}
-
-#moutainlion-image { /* Adjust the top position as needed */
-  bottom: 500px;
-  left: 500px; /* Adjust the left position as needed */
+#mountainlion-image { /* Adjust the top position as needed */
+  top: 450px;
+  right: 550px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }
 
 #raccoon-image { /* Adjust the top position as needed */
-  bottom: 300px;
-  left: 400px; /* Adjust the left position as needed */
+  bottom: 240px;
+  left: 650px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }
 
 #slug-image { /* Adjust the top position as needed */
-  bottom: 300px;
-  left: 500px; /* Adjust the left position as needed */
+  bottom:-50px;
+  right: 500px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }
 
 #squirrel-image { /* Adjust the top position as needed */
-  bottom: 300px;
-  left: 100px; /* Adjust the left position as needed */
+  bottom: -240px;
+  left: 750px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }
 
 #turkey-image { /* Adjust the top position as needed */
-  bottom: 500px;
-  left: 600px; /* Adjust the left position as needed */
+  bottom: 300px;
+  left: 500px; /* Adjust the left position as needed */
   /* Add other styling properties for the Crow image */
 }

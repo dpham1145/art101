@@ -187,6 +187,19 @@ function closePopup10() {
 // Event listener for the open button
 document.getElementById('openBtn10').addEventListener('click', openPopup10);
 
+//POPUP 11
+function openPopup11() {
+    document.getElementById('popup11').style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup11() {
+    document.getElementById('popup11').style.display = 'none';
+}
+
+// Event listener for the open button
+document.getElementById('openBtn11').addEventListener('click', openPopup11);
+
 
 
 openBtn.addEventListener("click", () => {

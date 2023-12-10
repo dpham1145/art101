@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project</title>
+	<title> The Animals of UCSC</title>
         <script src="js/proj.js" defer></script>
 			<meta charset="UTF-8" />
 			  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,15 +15,39 @@
         
           
 
-          <!--About us Section-->
-          <div class = "upperbar">
-            <h1>The Animals of UCSC</h1>
-            <a href="../project/about.html">
-              <button>About Us</button>
-            </a>
-          </div>
-          
+         <!-- About us Section -->
+         <button id="aboutButton" onclick="openPopup11()">About Us</button>
+            <h1><img id="title" src="../project/img/title.png"></h1>
 
+        <!-- Popup for About Us -->
+        <center>
+
+        <div id="popup11" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup11()">&times;</span>
+                <!-- Add your content for the About Us popup -->
+                <h1>About Us</h1> 
+                <h3>Our Team</h3>
+                <p>Kyle Chen, Damon Pham, Jehmiel Vinluan, Nathan Kim, & Natalya Gonzalez   </p>
+                <h3>Our Project</h3>
+                <p>Our project will be called “UCSC Animals Generator.” Our project’s function is to provide 
+                    random animals for users to read into. Each animal will have a dedicated pop up to them along with 
+                    3 sub-sections. These sub-sections include more information about an animal. These are labeled: diet, habitat, and bio. 
+                    If the user is indecisive about 
+                    what animal they want to read about, there will be a random animal button in the top middle of the page.</p>
+            </div>
+        </div>
+      
+          
+        <!-- Randomize Button -->
+        <!--opens a random page-->
+        <button class="randomButtonHome" id="randomButton">Randomize</button>
+        <div class = "upperbar">
+            <img class="center" src="../project/img/ucscmap.jpeg"
+            width = "700";>
+        </div>
+      </center>
+        
           <!--Animals List-->
     <section>
       <div class="button-container-home">
@@ -37,18 +61,10 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup1()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Coyote</h2>
                 </div>       
                 <img class="center" src="../project/img/coyote.jpg"
                    width = "300";>
-
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
-
                     <!-- Tab Content -->
                 <div class="tab" id="tab1">
                       <button class="tab-btn" onclick="openTab('diet')">Diet</button>
@@ -57,15 +73,38 @@
                       
                     <div id="diet" class="tab-content">
                       <!-- Diet Content Goes Here -->
-                      <p>Diet information...</p>
+                      <p> <img class="left" src="../project/img/coyotediet.png"
+                        width= "300";>
+                        Coyotes are opportunistic omnivores, meaning they eat a wide variety of foods depending on what is available in their environment. Their diet can vary based on the season, geographical location, and local prey availability. In Northern California, the diet of coyotes may include: <br>
+                        1. Small Mammals: Coyotes commonly hunt small mammals such as rabbits, rodents (like squirrels and mice), and sometimes small ungulates like fawns.<br>
+                        2. Birds: They may consume birds, especially ground-nesting birds and their eggs.<br>
+                        3. Insects: Insects can be a significant part of a coyote's diet, especially during certain times of the year.<br>
+                        4. Fruits and Vegetables: Coyotes are known to consume fruits, berries, and vegetables. They might eat agricultural crops if they are available.<br>
+                        5. Carrion: Coyotes are scavengers and will feed on carrion (the flesh of dead animals) when the opportunity arises.<br>
+                        6. Fish: In some areas, coyotes may include fish in their diet, particularly if they live near water bodies.<br>
+                        7. Human Food: In urban or suburban areas, coyotes might scavenge for human food in garbage bins, compost piles, or other accessible sources.<br>
+                        The specific composition of a coyote's diet in Northern California can be influenced by factors such as the presence of urban areas, agricultural activities, and the local ecosystem. It's important to note that coyotes are adaptable and can adjust their diet based on what is available to them in their environment.</p>
                   </div>
                   <div id="habitat" class="tab-content">
                       <!-- Habitat Content Goes Here -->
-                      <p>Habitat information...</p>
+                      <p> <img class="left" src="../project/img/coyotehabitat.jpg"
+                        width= "300";>
+                        Coyotes are highly adaptable animals and can be found in a variety of habitats, including those in Northern California. The specific habitat of coyotes in this region can vary, but generally, they are known to inhabit the following types of environments:<br>
+                        1. Grasslands: Coyotes are often found in grassy areas, where they can hunt small mammals like rodents and rabbits.<br>
+                        2. Woodlands: They can thrive in wooded areas, including forests and woodlands, where they find cover and potential prey.<br>
+                        3. Chaparral: Coyotes may inhabit chaparral ecosystems, characterized by dense, woody shrubs.<br>
+                        4. Urban and Suburban Areas: Coyotes have adapted well to human-modified environments and can be found in urban and suburban areas, particularly where there are parks, green spaces, and sufficient food sources.<br>
+                        Coyotes are versatile and can adjust their habitat preferences based on food availability, water sources, and shelter. They are known for their ability to coexist with humans, and this adaptability has contributed to their widespread distribution across North America, including Northern California.</p>
                   </div>
                   <div id="bio" class="tab-content">
                       <!-- Bio Content Goes Here -->
-                      <p>Bio information...</p>
+                      <p> <img class="left" src="../project/img/coyote2.jpg"
+                        width= "300";>
+                        Fun Facts about coyotes:<br>
+                        1. Clever Problem-Solvers: Coyotes are known for their intelligence and problem-solving skills. They can adapt to various situations and environments, often finding creative solutions to challenges they encounter.<br>
+                        2. Eco-friendly Pest Control: Coyotes play a valuable role in natural pest control. They help keep rodent populations in check by preying on mice and rats, making them beneficial for agriculture and human settlements.<br>
+                        3. Fast Eaters: Coyotes are efficient eaters. They have been observed consuming large quantities of food quickly, which is an adaptation that allows them to eat fast and move on, reducing the risk of being scavenged by larger predators.<br>
+                        4. Diverse Coat Colors: Coyotes exhibit a range of coat colors, including shades of gray, brown, red, and even black. This diversity in coat coloration can be influenced by geographic location and genetic factors, resulting in a visually interesting population of coyotes.</p>
                   </div>
 
               </div>
@@ -80,16 +119,11 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup2()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Crow</h2>
             <img class="center" src="../project/img/crowmain.jpg"
 
-            width = "100";>
+            width = "400";>
 
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    </p>
                         <!-- Tab Content -->
                 <div class="tab" id="tab2">
                   <button class="tab-btn" onclick="openTab('diet2')">Diet</button>
@@ -98,15 +132,35 @@
 
                   <div id="diet2" class="tab-content">
                       <!-- Diet Content Goes Here -->
-                      <p>Diet information for Crow...</p>
+                      <p> <img class="left" src="../project/img/crowdiet.jpg"
+                        width= "300";>
+                        Crows are highly adaptable birds with omnivorous diets, and their specific diet in Northern California can vary based on the season, availability of food, and local habitat. Generally, a crow's diet may include:<br>
+                        1. Insects: Crows feed on a variety of insects, including beetles, grasshoppers, caterpillars, and other small invertebrates.<br>
+                        2. Small Vertebrates: They are known to eat small vertebrates such as rodents, small birds, and bird eggs.<br>
+                        3. Carrion: Crows are scavengers and often consume carrion (the flesh of dead animals). They play a crucial role in cleaning up the environment by removing carcasses.<br>
+                        4. Fruits and Seeds: Crows have a diverse diet that includes fruits, berries, and seeds. They are opportunistic feeders and will eat whatever is available.<br>
+                        7. Nuts: Crows can crack open nuts using their strong beaks, including hard-shelled nuts like walnuts.<br>
+                      </p>
                   </div>
                   <div id="habitat2" class="tab-content">
                       <!-- Habitat Content Goes Here -->
-                      <p>Habitat information for Crow...</p>
+                      <p> <img class="left" src="../project/img/crowhabitat.jpg"
+                        width= "300";>
+                        Crows are highly adaptable birds and can be found in a variety of habitats, including urban, suburban, and rural areas. In Northern California, crows can be commonly observed in the following habitats:<br>
+                        1. Urban and Suburban Areas: Crows are highly adaptable to human-modified environments. They thrive in cities and suburbs, taking advantage of the abundant food resources, including human waste and discarded food.<br>
+                        2. Wooded Areas: Crows are often found in wooded areas, including forests and wooded parks. These environments provide roosting sites and natural food sources.<br>
+                        3. Open Fields and Grasslands: Crows may inhabit open fields and grasslands, where they can find a variety of food sources, including insects, small vertebrates, and seeds.<br>
+                        4. Coastal Areas: In coastal regions of Northern California, crows may be found near shorelines, taking advantage of marine life and human activities along the coast.<br>
+                        </p>
                   </div>
                   <div id="bio2" class="tab-content">
                       <!-- Bio Content Goes Here -->
-                      <p>Bio information for Crow...</p>
+                      <p> <img class="left" src="../project/img/crowbio.jpg"
+                        width= "300";>
+                        1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
+                        2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
+                       3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
+                      </p>
                   </div>
               </div>
                        <!-- End Tab Content -->
@@ -123,18 +177,11 @@
                 <div class="popup-content">
                     <span class="close" onclick="closePopup3()">&times;</span>
   
-                    <p style="text-align:center">Bio</p>
+                    <h2 style="text-align:center">Deer</h2>
               <img class="center" src="../project/img/deermain.png"
   
               width = "300";>
   
-                    <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                      2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                      3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                      4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                      
-                      </p>
-
                           <!-- Tab Content -->
                         <div class="tab" id="tab3">
                           <button class="tab-btn" onclick="openTab('diet3')">Diet</button>
@@ -143,15 +190,28 @@
 
                           <div id="diet3" class="tab-content">
                               <!-- Diet Content Goes Here -->
-                              <p>Diet information for Crow...</p>
+                              <p><img class="left" src="../project/img/deerdiet.png"
+                                width = "300"; >
+                              <p>The Black Tailed Deer are herbivores and eat a variety of shrubs, trees, and grasses. A few examples of these would be willow, salmonberry, poison oak, red huckleberry, and lichens that grow on trees. During late spring to fall their diet changes slightly, with an integration of blackberries, apples, maple, and forbs. </p>
                           </div>
                           <div id="habitat3" class="tab-content">
                               <!-- Habitat Content Goes Here -->
-                              <p>Habitat information for Crow...</p>
+                              <p><img class="left" src="../project/img/deerhabitat.png"
+                                width = "300"; >
+                              <p>These deer live along the Pacific coast from north to southeastern Alaska to northern and western California. However, the most common place to find them is in California, but their range is large, spanning from Santa Barbara County up to Washington. They tend to live on the edge of forests, a transition zone of vegetation between forests and pastures or crop fields.
+                                 These tend to be safer areas because the dark forest lacks the type of brush that these deer prefer, and open areas lack the hiding spots that they need for protection. With the changing seasons, they migrate to different areas as a way to avoid deep snow and any other harsh conditions they may encounter as winter takes over. 
+                            </p>
                           </div>
                           <div id="bio3" class="tab-content">
-                              <!-- Bio Content Goes Here -->
-                              <p>Bio information for Crow...</p>
+                              <!-- Bio Content Goes Deer -->
+                              <p><img class="left" src="../project/img/deerbio.png"
+                                width = "300"; >
+                              <p>Black tailed deer are a medium sized breed with a gray-brown coat in the winter and a reddish-brown coat in the summer. Their most noticeable feature is their blacked-tipped tail. 
+                                November and early December are their mating season and bucks can be seen running back and forth across roads in search of mates. After mating, they spend the rest of the season recovering from broken antlers and weight loss. 
+                                
+                                Most fawns are born in late May and into June, twins are typical but single and triplets can also occur. When they are born, they have no scent, which enables the mother to hide her offspring while she goes off to forage. Deer communicate through scent and have multiple glands on their lower legs that produce different scents and pheromones. The outside of their lower leg 
+                                produces an alarm scent, the inside of their hock shows mutual recognition, and between their hooves enables a scent trail that other deer can follow when they travel. Knowing this information, deer have excellent sight and smell that help them avoid danger. 
+                                </p>
                           </div>
                       </div>
                       <!-- End Tab Content -->
@@ -169,17 +229,10 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup4()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Koi</h2>
             <img class="center" src="../project/img/koimain.png"
 
             width = "300";>
-
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
                         <!-- Tab Content -->
                         <div class="tab" id="tab4">
                           <button class="tab-btn" onclick="openTab('diet4')">Diet</button>
@@ -188,15 +241,37 @@
 
                           <div id="diet4" class="tab-content">
                               <!-- Diet Content Goes Here -->
-                              <p>Diet information for Crow...</p>
+                              <p> <img class="left" src="../project/img/koi-feeding.png"
+                                width= "300";>
+                                Kois are omnivores which means they mostly eat plants and bugs. In the wild they algae, insects, worms, seeds, and other plants and bugs.
+                                Which is they're main source of food. They also sometimes eat other fish eggs and dead animals and plants. THey can be found to eat any food in area of their body of water from surface to 
+                                depths of their pond. When it comes to domesticated koi they're diet can go from types of fish food like Spirulina Algae (Fish Food pellet that uses algae) and Brine Shrimp(Very small Shrimp that's been bio-enriched). But with a koi's diet 
+                                any carbohydrates isn't good for the koi because they have a hard time digesting those types of foods.  </p>
+                                <a href="https://premierpond.com/feed-koi-fish-2/#:~:text=In%20the%20wild%2C%20koi%20fish,continue%20having%20their%20natural%20diet.">Source</a>      
                           </div>
                           <div id="habitat4" class="tab-content">
                               <!-- Habitat Content Goes Here -->
-                              <p>Habitat information for Crow...</p>
+                              <p> <img class="left" src="../project/img/koihabitat.png"
+                                width= "300";>
+                                A wild Koi's habitat is freshwater bodies. It is found mostly in the Black Sea, Caspian Sea, and Aral Sea.
+                                Sometimes Koi would migrate in flooded areas to their freashwater areas to lay their eggs. 
+                                With the Koi being domesticated it now lives all over the world in diffierent types of freshwater ponds.
+                                In the case of UCSC, the school has a Koi pond habitat at Porter College.</p>
+                                <a href="https://www.henryvilaszoo.gov/animal/koi/#:~:text=Koi%20fish%20are%20colorful%2C%20ornamental,Japanese%20word%20for%20%E2%80%9Ccarp.%E2%80%9D">Source</a>
                           </div>
                           <div id="bio4" class="tab-content">
                               <!-- Bio Content Goes Here -->
-                              <p>Bio information for Crow...</p>
+                              <p> <img class="left" src="../project/img/koibio.png"
+                                width= "300";>
+                                When it comes to the a Koi's inner biology it has a few different parts. Starting with the swimbladder
+                                which is located near the top of the koi's body. It helps the koi with it's movement from the depths of the water as well as making so the koi uses less energy while swimming <br>.
+                                The part is the gills it's main point is respiration for the koi, as it allows oxygen to flow to the koi's body using the water around. <br>
+                                With the heart of the koi it similar to ours as it pumps blood with oxygen from the gills to the rest of our body. <br>
+                                The Liver of the Koi breaks anything unwanted from the food it eats like toxins and proteins that's not needed. <br>
+                                The Gonads are the koi's reproduction organs that store either eggs or sperm.
+                                The Vent where the waste of the koi's system exits out from. <br>
+                                With the Spleen it the main area of producing cells for the immune system of the koi <br></p>
+                                <a href="https://biologicperformance.com/internal-anatomy-of-koi-fish/">Source</a>
                           </div>
                       </div>
   <!-- End Tab Content -->
@@ -212,17 +287,11 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup5()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Lizard</h2>
             <img class="center" src="../project/img/lizardmain.png"
 
             width = "300";>
 
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
                         <!-- Tab Content -->
                   <div class="tab" id="tab5">
                     <button class="tab-btn" onclick="openTab('diet5')">Diet</button>
@@ -231,15 +300,28 @@
 
                     <div id="diet5" class="tab-content">
                         <!-- Diet Content Goes Here -->
-                        <p>Diet information for Crow...</p>
+                        <p><img class="left" src="../project/img/lizarddiet.png"
+                        width = "300"; >
+                        <p>These lizards eat a large variety of different arthropods and insects. A few examples of these would be beetles, mites, ants, spiders, scorpions, and sow bugs. They will rarely ever hunt because they feed opportunistically on any insect that passes near them. Their feeding habits are also influenced by sex, season, and body temperature. They will also occasionally 
+                            eat plants if they urgently need water. 
+                        </p>
                     </div>
                     <div id="habitat5" class="tab-content">
                         <!-- Habitat Content Goes Here -->
-                        <p>Habitat information for Crow...</p>
+                        <p><img class="left" src="../project/img/lizardhabitat.png"
+                            width = "300"; >
+                        <p>The habitat of these creatures varies widely, ranging from arid biomes with scattered bushes to sandy areas with lots of rocks. They tend to gravitate toward sandier ecosystems with lots of rocks because they bask on rocks in order to get their body temperature up. 
+                        </p>
                     </div>
                     <div id="bio5" class="tab-content">
                         <!-- Bio Content Goes Here -->
-                        <p>Bio information for Crow...</p>
+                        <p><img class="left" src="../project/img/lizardbio.png"
+                            width = "300"; >
+                        <p>The common side-blotched lizard is native to dry regions and can be found throughout western United States and northern Mexico. They are a small species of lizard and usually only reach 2.4 inches in length. Some distinguishing characteristics in males are the blue flecks spread across their body or their yellow and orange sides. Females tend to have stripes along their body or could be unpatterned. 
+
+                            Their mating follows a “rock-paper-scissors mechanism” where the differences in each male's throat color plays a large role in how they compete for mates. The three morphs seen in these lizards are orange throated males, blue throated males, and yellow throated males. The cycle seen every year is that the least common morph will have the largest number of mature living 
+                            offspring in the next year. With studies done recently, this can be summarized as “orange beats blue, blue beats yellow, and yellow beats orange", which is similar to the rules of rock-paper-scissors.”  In turn, orange throated females tend to produce larger amounts of eggs, meanwhile yellow throated females lay fewer, yet larger, eggs.
+                            </p>
                     </div>
                 </div>
                 <!-- End Tab Content -->
@@ -255,17 +337,11 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup6()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Mountain Lion</h2>
             <img class="center" src="../project/img/mlmain.png"
 
             width = "300";>
 
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
                         <!-- Tab Content -->
                       <div class="tab" id="tab6">
                         <button class="tab-btn" onclick="openTab('diet6')">Diet</button>
@@ -274,15 +350,45 @@
 
                         <div id="diet6" class="tab-content">
                             <!-- Diet Content Goes Here -->
-                            <p>Diet information for Crow...</p>
+                            <p> <img class="left" src="../project/img/mldiet.png"
+                                width= "300";>
+                                The diet of mountain lions mostly consists of deer, and they would kill a deer about once a week. Mountain Lions would also eat coyotes, raccoons, rodents, elk, feral hogs, and porcupines. Being opportunistic hunters, they also prey on smaller animals such as squirrels.
+                                Mountain Lions tend to drag their meals and relocate them. Once they chose a location, they would cover their meals in grass, dry leaves, or pine needles. This would protect the food from being discovered by other animal and reduces spoilage. 
+                                Cougars are ambush predators, where they catch their unsuspecting prey rather than chasing them. 
+                                Their brute strength isn’t comparable to a bear, so they use their speed and precision to secure their prey. 
+                                Mountain lions will hunt till their hunger and the hunger of their kittens is satiated making them relentless hunters.</p>
+                                <a href="https://mountainlion.org/about-mountain-lions/#chapter-four---an-almost-perfect-predator">Source</a>
+
                         </div>
+                            
                         <div id="habitat6" class="tab-content">
                             <!-- Habitat Content Goes Here -->
-                            <p>Habitat information for Crow...</p>
+                            <p><img class="left" src="../project/img/mlhabitat.png"
+                                width= "300";>
+                                Mountain Lions prefer areas with cover and large prey. 
+                                These habitats are dense forests, bush-abundant mountains, and rocky canyons. 
+                                All these habitats provide the predator with natural cover from unsuspecting prey. 
+                                Of course, having a diet of mostly deer, the habitat must be suitable for deer. 
+                                Deer are abundant in foraging areas as well as areas with cover. 
+                                Cover, in return, gives deer a chance to escape from predators. 
+                                Other factors influence the mountain lions' choice of habitable land. 
+                                Male mountain lions decide their home range based on the abundance of potential mates. 
+                                Females favor somewhat secluded home ranges that would keep their kittens safe. 
+                                <a href="https://mountainlion.org/about-mountain-lions/#!chapter-three---cougars-at-home">Source</a></p>
+                                
                         </div>
                         <div id="bio6" class="tab-content">
                             <!-- Bio Content Goes Here -->
-                            <p>Bio information for Crow...</p>
+                            <p><img class="left" src="../project/img/mlbio.png"
+                                width= "200";>
+                                Mountain lions have long and sleek bodies. 
+                                They have long legs with big feet that have retractable claws. 
+                                These large cats have large and sharp canine teeth and special molars that are used to stab and tear into prey. 
+                                The coat of mountain lions is very short and is primarily tan. 
+                                The underside of its body is white. 
+                                Because of their bone structure, mountain lions are unable to roar. 
+                                Instead, they can purr, hiss, growl, yowl, and scream. 
+                                <a href="https://www.aquariumofpacific.org/onlinelearningcenter/species/mountain_lion">Source</a>   </p>
                         </div>
                     </div>
                     <!-- End Tab Content -->
@@ -298,17 +404,11 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup7()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Raccoon</h2>
             <img class="center" src="../project/img/raccoonmain.png"
 
             width = "300";>
 
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
                         <!-- Tab Content -->
                         <div class="tab" id="tab7">
                           <button class="tab-btn" onclick="openTab('diet7')">Diet</button>
@@ -317,15 +417,26 @@
 
                           <div id="diet7" class="tab-content">
                               <!-- Diet Content Goes Here -->
-                              <p>Diet information for Crow...</p>
+                              <p> <img class="left" src="../project/img/raccoonbio.png"
+                                width= "300";>
+                                A raccoon's diet is diverse and includes both plant and animal matter. Raccoons are known to consume fruits, nuts, berries, and vegetables. 
+                                However, they are equally skilled hunters and scavengers, preying on small mammals, birds, insects, and even amphibians.
+                                Raccoons are also notorious for raiding trash cans and dumpsters, showcasing their scavenging tendencies in urban settings.</p>
                           </div>
                           <div id="habitat7" class="tab-content">
                               <!-- Habitat Content Goes Here -->
-                              <p>Habitat information for Crow...</p>
+                              <p> <img class="left" src="../project/img/raccoonhabitat.png"
+                                width= "300";>
+                                Raccoons are highly adaptable mammals, and their habitats vary widely, encompassing both natural and urban environments. 
+                                They are commonly found in deciduous and mixed forests, where they utilize tree dens for shelter. Raccoons are equally at home in urban areas, 
+                                taking advantage of human-made structures like attics, chimneys, and crawl spaces for nesting.</p>
                           </div>
                           <div id="bio7" class="tab-content">
                               <!-- Bio Content Goes Here -->
-                              <p>Bio information for Crow...</p>
+                              <p> <img class="left" src="../project/img/raccoonbio.png"
+                                width= "300";>
+                                Raccoons, scientifically known as Procyon lotor, are medium-sized mammals native to North America but have also been introduced to other parts of the world. 
+                                Characterized by their distinctive black mask across their eyes and ringed tail, raccoons are well-adapted to a variety of habitats.</p>
                           </div>
                       </div>
                       <!-- End Tab Content -->
@@ -341,17 +452,11 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup8()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Banana Slug</h2>
             <img class="center" src="../project/img/slugmain.png"
 
             width = "300";>
 
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
                         <!-- Tab Content -->
                         <div class="tab" id="tab8">
                           <button class="tab-btn" onclick="openTab('diet8')">Diet</button>
@@ -360,15 +465,29 @@
 
                           <div id="diet8" class="tab-content">
                               <!-- Diet Content Goes Here -->
-                              <p>Diet information for Crow...</p>
+                              <p> <img class="left" src="../project/img/slugdiet.png"
+                                width= "300";>
+                                Banana slugs are mostly herbivores as well as decomposers, they eat almost anything plant-based. 
+                                From leaves, roots, stems, flowers, seeds and fruits. They also sometimes eat poison oak while most animals try to avoid poison oaks banana slugs have no problem eating it. 
+                                Banana slugs will also eat different types of fungi like most mushrooms. Sometimes banana slugs will also eat animal feces and and dead organic matter like dead leaves. But for the most part, Banana slugs eat anything that's plants.</p>
+                                <a href="https://www.pugetsound.edu/puget-sound-museum-natural-history/exhibits/terrestrial-panel/banana-slug#:~:text=Slugs%20are%20mostly%20herbivores%2C%20and,carcasses%20In%20that%20broad%20diet.">Source</a>
                           </div>
                           <div id="habitat8" class="tab-content">
                               <!-- Habitat Content Goes Here -->
-                              <p>Habitat information for Crow...</p>
+                              <p> <img class="left" src="../project/img/slughabitat.png"
+                                width= "300";>
+                                The habitat of the Banana Slugs is forests that are dense and moist. Found on leaves and the wet floor of the forest. They can be found in the Pacific Northwest from Central California to Alaska. 
+                                They can be found around our school especially on damp days after rain. </p>
+                                <a href="https://www.nationalgeographic.com/animals/invertebrates/facts/banana-slug#:~:text=The%20slug%20is%20native%20to,from%20Central%20California%20to%20Alaska.">Source</a>
                           </div>
                           <div id="bio8" class="tab-content">
                               <!-- Bio Content Goes Here -->
-                              <p>Bio information for Crow...</p>
+                              <p> <img class="left" src="../project/img/slugbio.png"
+                                width= "300";>
+                                So the anatomy of a banana has many different elements. 
+                                One of the key points of the Banana slug is the pneumostome where it holds its respiratory pore, lung, and reproductive organs. 
+                                The gonopore is another part that gives life to the banana slug, it's where its eggs exit. Now with its tentacles, the upper ones are for seeing and smelling. While the lower ones are for taste and feeling, with the radula being the slug's mouth.</p>
+                                <a href="https://agsci.oregonstate.edu/slug-portal/identification/slug-parts">Source</a>
                           </div>
                       </div>
                       <!-- End Tab Content -->
@@ -377,23 +496,17 @@
 
           <!-- Squirrel -->
           <img id="squirrel-image" class="clickable-image" src="../project/img/squirrelsilo.png" alt="Squirrel Image" onclick="openPopup('popup9')"
-          width = "100";>
+          width = "80";>
 
           <div id="popup9" class="popup">
               <div class="popup-content">
                   <span class="close" onclick="closePopup9()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Squirrel</h2>
             <img class="center" src="../project/img/squirrelmain.png"
 
             width = "300";>
 
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
                         <!-- Tab Content -->
                     <div class="tab" id="tab9">
                       <button class="tab-btn" onclick="openTab('diet9')">Diet</button>
@@ -402,15 +515,24 @@
 
                       <div id="diet9" class="tab-content">
                           <!-- Diet Content Goes Here -->
-                          <p>Diet information for Crow...</p>
+                          <p> <img class="left" src="../project/img/squirreldiet.png"
+                            width= "300";>
+                            Squirrels are herbivorous rodents, with a diet that varies depending on species and environmental factors. 
+                            Their primary food sources include nuts, seeds, fruits, and fungi, but they may also consume insects, bird eggs, and small vertebrateas.</p>
                       </div>
                       <div id="habitat9" class="tab-content">
                           <!-- Habitat Content Goes Here -->
-                          <p>Habitat information for Crow...</p>
+                          <p> <img class="left" src="../project/img/squirrelhabitat.png"
+                            width= "300";>
+                            Squirrels are highly adaptable and can be found in a wide range of environments, including forests, parks, gardens, and urban areas. 
+                            Tree-dwelling species often build nests called dreys in the branches, while ground squirrels dig burrows for shelter and protection.</p>
                       </div>
                       <div id="bio9" class="tab-content">
                           <!-- Bio Content Goes Here -->
-                          <p>Bio information for Crow...</p>
+                          <p> <img class="left" src="../project/img/squirrelbio.png"
+                            width= "300";>
+                            Squirrels belong to the family Sciuridae, which includes various species such as tree squirrels, ground squirrels, and flying squirrels. 
+                            Characterized by their sharp incisor teeth that continuously grow, squirrels have a distinctive bushy tail that aids in balance and communication.</p>
                       </div>
                   </div>
                   <!-- End Tab Content -->
@@ -425,17 +547,10 @@
               <div class="popup-content">
                   <span class="close" onclick="closePopup10()">&times;</span>
 
-                  <p style="text-align:center">Bio</p>
+                  <h2 style="text-align:center">Turkey</h2>
             <img class="center" src="../project/img/turkeymain.png"
 
             width = "300";>
-
-                  <p>1. Tool Use and Problem-Solving Skills: Crows are known for their exceptional intelligence and problem-solving abilities. They have been observed using tools, such as sticks, to extract insects from tree bark or even creating makeshift tools by modifying existing objects. This ability to use tools for specific tasks is a behavior not commonly seen in many bird species.
-                    2.  Complex Communication: Crows have a sophisticated system of communication. They use a variety of vocalizations to convey different messages, and they can even mimic sounds from their environment, including the calls of other bird species and human-made noises. Crows are also known for their ability to recognize and remember human faces.
-                    3. Funeral Behavior: There have been observations suggesting that crows engage in what appears to be "funeral" behavior. When a member of their group dies, crows may gather and exhibit behaviors that resemble mourning. While the exact reasons for this behavior are not fully understood, it suggests a level of social complexity and emotional depth in these birds.
-                    4. Playful Behavior: Crows are playful birds, especially when they are young. They engage in games such as dropping and catching objects, aerial acrobatics, and even sliding down snow-covered roofs. Play is thought to be important for the development of cognitive and physical skills in young crows.
-                    
-                    </p>
                         <!-- Tab Content -->
                     <div class="tab" id="tab10">
                       <button class="tab-btn" onclick="openTab('diet10')">Diet</button>
@@ -444,15 +559,42 @@
 
                       <div id="diet10" class="tab-content">
                           <!-- Diet Content Goes Here -->
-                          <p>Diet information for Crow...</p>
+                          <p><img class="left" src="../project/img/turkeydiet.png"
+                            width= "300";>
+                            Turkeys are omnivores and eat anything they can find, including grasses, 
+                    invertebrates, forbs, seeds, tubers, nuts, fruits, and occasionally small mammals, 
+                    reptiles, or amphibians. While plants usually make up for most of the turkey’s diet, 
+                    insects would be their main source of protein. 
+                    Turkeys would spend the day scratching and pecking at the ground searching for food. 
+                    The food will be stored in the bird’s crop (a chamber within the esophagus) before it is swallowed. 
+                    <a href="https://www.outdoorlife.com/hunting/what-do-wild-turkeys-eat/">Source</a></p>
                       </div>
                       <div id="habitat10" class="tab-content">
                           <!-- Habitat Content Goes Here -->
-                          <p>Habitat information for Crow...</p>
+                          <p><img class="left" src="../project/img/turkeyhabitat.png"
+                            width= "300";>
+                            The wild turkeys were introduced to California in 1877. 
+                        With this introduction, turkeys have resided in many portions of the state. 
+                        The most common turkey (The Rio Grande Turkey), 
+                        is found mostly in deciduous riparian oak and conifer-oak woodlands. 
+                        Merriam Turkeys (a subspecies of turkey) are found in higher elevations in conifer-black oak habitats. 
+                        Generally, turkeys habit in areas with a mix of large trees with grassy openings near water. 
+                        They also reside in rugged and hilly terrain which allows them to avoid predators easier.
+                        <a href="https://oaks.cnr.berkeley.edu/wild-turkeys-in-oak-woodlands/">Source</a></p>
                       </div>
                       <div id="bio10" class="tab-content">
                           <!-- Bio Content Goes Here -->
-                          <p>Bio information for Crow...</p>
+                          <p><img class="left" src="../project/img/turkeybio.png"
+                            width= "300";>
+                            Turkeys are distinct due to their large size, compared to common smaller birds. 
+                        Wild turkeys have long reddish-yellow to grayish-green legs. 
+                        The male turkeys have body feathers that are blackish and dark. 
+                        Female turkeys have duller feathers that are often gray-brown with a coppery sheen. 
+                        Male turkeys are polygamous, meaning that they strut their feathers and show off their tail to impress females. 
+                        Females tend to adventure alone to find a safe nest site. 
+                        These nests are usually found in tall grass, ground covers, or thick shrubs that allow the adult and eggs to hide. 
+                        Turkeys are also a flocking species, so they tend to stick with their kind. 
+                        <a href="https://ipm.ucanr.edu/home-and-landscape/wild-turkeys/pest-notes/">Source</a></p>
                       </div>
                   </div>
                   <!-- End Tab Content -->
@@ -462,11 +604,7 @@
   </div>
     </section>
 
-        <!-- Randomize Button -->
-        <!--opens a random page-->
-        <button class="randomButtonHome" id="randomButton">Randomize</button>
-        <img class="center" src="../project/img/ucscmap.jpeg"
-        width = "700";>
+
  </main>
     </body> 
 </html>
